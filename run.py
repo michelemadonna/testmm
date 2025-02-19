@@ -5,7 +5,7 @@ import re
 import string
 
 # Initialize the main FastAPI application
-main_app = FastAPI()
+main_app = FastAPI(root_path="/mediaflow_proxy")
 
 # Manually add only non-static routes from mediaflow_app
 for route in mediaflow_app.routes:
