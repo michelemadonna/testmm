@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:  
+  mediaflow_proxy:
+    build: .  # Specifica la cartella contenente il Dockerfile
+    container_name: mediaflow_proxy
+    ports:
+      - "8888:8888"
